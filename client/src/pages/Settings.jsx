@@ -171,7 +171,7 @@ export default function Settings() {
                         <Globe className="w-4 h-4 text-slate-400" />
                         <div>
                           <p className="text-sm font-medium text-slate-200">Global Logging Logs</p>
-                          <p className="text-xs text-slate-500">Record all denied entrance scans into database permanently.</p>
+                          <p className="text-xs text-slate-500">Record all  entrance scans into database permanently.</p>
                         </div>
                       </div>
                       <input type="checkbox" defaultChecked className="w-4 h-4 rounded bg-slate-950 border-slate-800 text-blue-600 focus:ring-0 focus:ring-offset-0 cursor-pointer" />

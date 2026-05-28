@@ -15,10 +15,7 @@ const port = 4000;
 
 // الـ Middlewares
 app.use(express.json());
-app.use(cors({
-    origin: ["http://localhost:5173","http://localhost:5174","http://localhost:5175"], // تأكد إن بورت الفرونت إيند هنا مظبوط
-    credentials: true
-}));
+app.use(cors());
 
 // 2. تحويل الـ app إلى HTTP Server عشان السوكيت يشتغل صح
 const httpServer = createServer(app);

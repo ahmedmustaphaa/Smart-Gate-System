@@ -15,7 +15,10 @@ const port = 4000;
 
 // الـ Middlewares
 app.use(express.json());
-app.use(cors());
+app.use({
+    origin: "https://smart-gate-system-ipqu.vercel.app", 
+  credentials: true
+});
 
 // 2. تحويل الـ app إلى HTTP Server عشان السوكيت يشتغل صح
 const httpServer = createServer(app);

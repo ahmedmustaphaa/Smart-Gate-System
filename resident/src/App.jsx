@@ -19,11 +19,11 @@ function App() {
 
   return (
     <Router>
-      {/* مكون الإشعارات التلقائي (Hot Toast) عشان يظهر رسائل النجاح أو الأخطاء */}
+
       <Toaster position="top-center" reverseOrder={false} />
       
       <Routes>
-        {/* 1. صفحة تسجيل الدخول (الصفحة الرئيسية للأبليكيشن) */}
+
         <Route path="/" element={<Login />} />
         
         {/* 2. لوحة تحكم المالك (محمية) */}
@@ -40,7 +40,6 @@ function App() {
           </ProtectedRoute>
         } />
 
-        {/* لو الساكن كتب أي مسار غلط أو مش موجود، يرجعه لصفحة اللوجين */}
         <Route path="*" element={<Navigate to="/" replace />} />
         // في ملف الـ Router بتاعك:
 <Route path="/security-scanner" element={<Scanner/>} />

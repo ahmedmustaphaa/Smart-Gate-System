@@ -160,7 +160,7 @@ export default function Settings() {
                         <Bell className="w-4 h-4 text-slate-400" />
                         <div>
                           <p className="text-sm font-medium text-slate-200">Emergency Audio Alerts</p>
-                          <p className="text-xs text-slate-500">Play system sound on Force Lockdown/Open actions.</p>
+                          <p className="text-xs text-slate-500">Play system sound on Force Lockdown actions.</p>
                         </div>
                       </div>
                       <input type="checkbox" defaultChecked className="w-4 h-4 rounded bg-slate-950 border-slate-800 text-blue-600 focus:ring-0 focus:ring-offset-0 cursor-pointer" />

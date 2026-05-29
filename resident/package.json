@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm config set legacy-peer-deps true && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

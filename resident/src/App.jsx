@@ -25,8 +25,7 @@ function App() {
       <Routes>
 
         <Route path="/" element={<Login />} />
-        
-        {/* 2. لوحة تحكم المالك (محمية) */}
+      
         <Route path="/dashboard" element={
           <ProtectedRoute>
             <ResidentDashboard />
@@ -41,7 +40,7 @@ function App() {
         } />
 
         <Route path="*" element={<Navigate to="/" replace />} />
-        // في ملف الـ Router بتاعك:
+    
 <Route path="/security-scanner" element={<Scanner/>} />
       </Routes>
     </Router>

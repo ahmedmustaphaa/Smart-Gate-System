@@ -8,7 +8,7 @@ import Scanner from './conponeent/Scanner'
 
 function App() {
   
-  // دالة حماية المسارات: لو مفيش توكن في الـ LocalStorage يرجعه للوجين فوراً
+
   const ProtectedRoute = ({ children }) => {
     const token = localStorage.getItem('residentToken');
     if (!token) {
@@ -33,7 +33,7 @@ function App() {
           </ProtectedRoute>
         } />
         
-        {/* 3. شاشة دعوة زائر (محمية) */}
+      
         <Route path="/invite" element={
           <ProtectedRoute>
             <CreateInvitation />

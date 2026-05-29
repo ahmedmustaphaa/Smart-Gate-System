@@ -12,7 +12,7 @@ function Dashboard() {
       {/* زرار المنيو للموبايل */}
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-6 right-6 z-50 p-2.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl text-white active:scale-95 transition-transform"
+        className="md:hidden fixed top-6 right-12 z-50 p-2.5 bg-white/5 backdrop-blur-md border border-white/10 rounded-xl text-white active:scale-95 transition-transform"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
